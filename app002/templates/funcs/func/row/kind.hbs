@@ -1,0 +1,9 @@
+{{log '**************'}}
+{{log model.kind_id}}
+{{#if id1}}
+	<p>id为1的内容</p>
+	<p>{{link-to 'id=1' 'funcs.func.row.kind.id1' model.func_slug row.row_slug kind.kind_slug}}</p>
+{{/if}}
+
+<p>*-*-*-*-*-*-*</p>
+{{outlet}}

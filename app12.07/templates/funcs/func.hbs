@@ -1,0 +1,10 @@
+{{#each model.kinds as |kind|}}
+	<div class="kindTitle ui menu">
+		{{#link-to 'funcs.func.kind' model.func_slug kind.kind_slug}}
+			<a class="kindName item"><span class="kindIcon"></span>{{kind.name}}</a>
+		{{/link-to}}
+	</div>
+	<div class="detail">
+		{{outlet}}
+	</div>
+{{/each}}

@@ -1,0 +1,165 @@
+/*媒体查询min最小宽度max最宽度*/
+@media only screen and ( width:320px ) {		/*iphone4/4s/5/5s竖屏         		 */
+
+}
+@media only screen and ( width:360px ) {		/*小米、三星note系列专用竖屏  		 */
+
+}
+@media only screen and ( min-width:479px ) {	/*大部分安卓手机以及其他手机  		 */
+
+}
+/*reset*/
+a,a:hover{
+	text-decoration: none!important;
+}
+
+/* common */
+body { 
+	background: #48c0d8;
+	font-family: microsoft yahei;
+	overflow-x: hidden;
+}
+
+#header{
+	width: 960px;
+	height:60px;
+	background: #303030;
+	margin:20px auto 0;
+	border-radius: 10px 10px 0 0;
+}
+
+#header .item{
+	color: rgb(0,200,224);
+}
+
+#content{
+	width:960px;
+	height: 820px;
+	margin:0 auto;
+	display: block;
+	overflow: hidden;
+}
+
+.before_content{
+	background:#fff;
+	width:100%;
+	height:100%;
+	line-height: 820px;
+	border-radius:0 0 10px 10px;
+	text-align:center;
+	font-size:40px;
+}/* delete */
+
+#nav{
+	float: left;
+	width: 195px;
+	height: 820px;
+    text-align: center;
+	background: #e2e2e2;
+	padding:10px 0;
+	border-right: 1px solid #aaa;
+	border-radius:0 0 0 10px;
+	font-family: microsoft yahei;
+}
+
+#nav .item{
+	cursor: pointer;
+	width: 195px;
+	height:100px;
+	padding:10px 0;
+	font-size: 14px;
+	color: #5e5e5e;
+    border-right: 1px solid #aaa;
+}
+
+#nav>.active>.item{
+	background: #fff;
+	border-color: #fff;
+}
+
+.circle{
+	display: inline-block;
+	width: 57px;
+	height: 57px;
+	border-radius: 50%;
+	background: #5e5e5e;
+}
+
+#info{
+	float: left;
+	width:765px;
+	width:-moz-calc ( 100% - 195px );
+	width:-webkit-calc ( 100% - 195px );
+	width:calc ( 100% - 195px );
+	height: 820px;
+	line-height: 820px;
+	background: #fff;
+	text-align: center;
+	border-radius:0 0 10px 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#info .kindTitle{
+	width:98%;
+	height:45px;
+	font-size:14px;
+	margin-left:2%;
+	background:#f4f0f0;
+	font-family: microsoft yahei;
+	color:#5e5e5e;
+}
+
+#info .kindTitle>.active{
+	background:rgba(0, 0, 0, 0.08); 
+}
+
+#chart { 
+	height: 300px;
+	padding:0 30px; 
+}
+
+#id1_chartstatus{
+	overflow: hidden;
+}
+
+#id1_chartstatus>*{
+	float:left;
+	margin-right: 20px;
+}
+
+#id1_chartstatus>*:last-child{
+	float:right;
+	margin: 0px;
+}
+
+#id1_status>div{
+	overflow: hidden;
+}
+
+#id1_status .circle{
+	float:left;
+	margin:0 calc( (14% - 57px)/2);
+}
+
+#id1_status p{
+	float:left;
+	color:#000;
+	width:14%;
+	height: 2em;
+	line-height: 2em;
+	text-align: center;
+}
+
+
+#footer{
+	height:120px;
+	text-align: center;
+	margin-top: 20px;
+	color:rgb(114, 114, 114);
+    background: rgb(41, 40, 42);
+}
+
+#footer p{
+	line-height:120px;
+}

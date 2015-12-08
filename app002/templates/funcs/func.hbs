@@ -1,0 +1,21 @@
+{{#each model.rows as |row|}}
+	<div class="kindTitle">
+		{{#each row.kinds as |kind|}}
+			{{#link-to 'funcs.func.row.kind' model.func_slug row.row_slug kind.kind_slug}}
+				<span>{{kind.name}}</span>
+			{{/link-to}}
+		{{/each}}
+	</div>
+	<div class="detail">
+		{{outlet}}
+	</div>
+
+	<!--方法二-->
+	<!--<div class="kindTitle">
+		{{link-to '路由状态' 'funcs.func.routestatus' model.func_slug}}
+	</div>
+	<div class="detail">
+		<p>具体内容</p>
+		{{outlet}}
+	</div>-->
+{{/each}}

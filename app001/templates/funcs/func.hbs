@@ -1,0 +1,12 @@
+{{#each model.bsetting as |bsetting|}}
+	<h3 class="bsetting">
+		{{#each bsetting.setting as |setting|}}
+			{{#link-to 'funcs.func.settings' model.slug setting.slug1}}
+				{{setting.name}}
+			{{/link-to}}
+			<div class="detail">	
+				{{outlet}}
+			</div>
+		{{/each}}
+	</h3>
+{{/each}}

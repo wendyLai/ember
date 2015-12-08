@@ -1,0 +1,13 @@
+<div class="ui vertical inverted menu" id="nav">
+	{{#each model as |func|}}
+		{{#link-to "funcs.func" func.func_slug}}
+			<div class="item">
+				<span></span>
+				<p>{{func.name}}</p>
+			</div>
+		{{/link-to}}
+	{{/each}}
+</div>
+<div id="info">
+	{{outlet}}
+</div>
